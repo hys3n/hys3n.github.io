@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabian Hysen Patti :: root@portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio di Fabian Hysen Patti — SOC Analyst e Pen Tester. Competenze, certificazioni e progetti."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23c8ff3e%22>_</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="crt-overlay" aria-hidden="true"></div>
+    <div class="grid-dots" aria-hidden="true"></div>
+
+    <div id="boot-screen" aria-hidden="true">
+      <pre id="boot-log"></pre>
+    </div>
+
+    <div id="site" class="hidden">
+      <header class="topbar">
+        <div class="topbar__brand">
+          <span class="dot"></span>
+          <span>PORTFOLIO_OS <span class="dim">v1.0</span></span>
+        </div>
+        <nav class="topbar__nav" id="site-nav">
+          <a href="#about" data-target="about">CHI_SONO</a>
+          <a href="#skills" data-target="skills">COMPETENZE</a>
+          <a href="#certifications" data-target="certifications">CERTIFICAZIONI</a>
+          <a href="#projects" data-target="projects">PROGETTI</a>
+          <a href="#contact" data-target="contact">CONTATTI</a>
+        </nav>
+        <div class="topbar__status">
+          <span class="status-led"></span>
+          <span id="clock">00:00:00</span>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+
+      <main>
+        <section class="hero" id="hero">
+          <div class="hero__scan">
+            <span class="label">STATO SISTEMA</span>
+            <div class="hero__scan-bar"><div class="hero__scan-fill"></div></div>
+            <span class="label">100%</span>
+          </div>
+
+          <div class="hero__main">
+            <p class="hero__eyebrow">// SESSIONE_AVVIATA — accesso consentito</p>
+            <h1 class="hero__name">
+              <span class="prompt">root@dev:~$</span>
+              <span id="typed-name">Fabian Hysen Patti</span><span class="cursor">_</span>
+            </h1>
+            <p class="hero__role"><span class="accent">SOC Analyst &amp; Pen Tester</span></p>
+            <p class="hero__tagline">Metodico, analitico e proattivo come la MITRE.</p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--ghost">&gt; VEDI_PROGETTI</a>
+              <a href="#contact" class="btn btn--ghost">&gt; CONTATTAMI</a>
+              <a href="assets/cv.pdf" class="btn btn--ghost" download>&gt; SCARICA_CV</a>
+            </div>
+          </div>
+
+          <div class="hero__panel">
+            <div class="panel__head">
+              <span>SEQUENZA_ACCESSO</span>
+              <div class="panel__buffer">
+                <span class="buf-cell"></span><span class="buf-cell"></span>
+                <span class="buf-cell"></span><span class="buf-cell"></span>
+              </div>
+            </div>
+            <ul class="panel__list">
+              <li><span class="mono">01</span> COMPETENZE_TECNICHE</li>
+              <li><span class="mono">02</span> CERTIFICAZIONI_VERIFICATE</li>
+              <li><span class="mono">03</span> PROGETTI_ESEGUITI</li>
+              <li><span class="mono">04</span> INFORMAZIONI_DI_CONTATTO</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <h2 class="section__title"><span class="tag">01</span> CHI_SONO</h2>
+          <div class="about__grid">
+            <div class="about__text">
+              <p>
+                Sono Fabian Hysen Patti, studente di cybersecurity presso ITS ICT Piemonte, passo le
+                mie giornate a studiare vulnerabilità e tecniche di exploit per poi vedere come si
+                possano prevenire o contrastare nel migliore dei modi. Obiettivo:
+                <span class="hl">Purple Team</span>. Sapere come funzioni un software di pen-testing
+                ti permette di trovare la soluzione migliore per contrastarlo.
+              </p>
+              <p>
+                Ora parlano i fatti:
+                <br />
+                -<span class="hl">Top 1% mondiale su TryHackMe</span>, la strada è ancora lunga ma
+                determinazione e passione non mancano.
+                <br />
+                -<span class="hl">NEFI OS</span>, Distro linux incentrata sulla difesa.
+                <br />
+                -<span class="hl">CTF Player</span>, Il modo migliore per dimostrare di cosa siamo
+                capaci, il campo di prova per le nostre competenze.
+              </p>
+            </div>
+            <div class="about__side">
+              <figure class="avatar">
+                <div class="avatar__ring" aria-hidden="true"></div>
+                <div class="avatar__photo">
+                  <span class="avatar__placeholder"
+                    >[ FOTO ]<br /><small>assets/foto.jpeg</small></span
+                  >
+                  <img
+                    src="assets/foto.jpeg"
+                    alt="Foto di Fabian Hysen Patti"
+                    onerror="this.remove()"
+                  />
+                </div>
+              </figure>
+
+              <div class="about__stats">
+                <div class="stat">
+                  <span class="stat__value">0</span>
+                  <span class="stat__label">ANNI_ESPERIENZA</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__value">1</span>
+                  <span class="stat__label">PROGETTI_COMPLETATI</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__value">3</span>
+                  <span class="stat__label">CERTIFICAZIONI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="skills">
+          <h2 class="section__title"><span class="tag">02</span> COMPETENZE</h2>
+          <p class="section__hint"></p>
+
+          <div class="skills__groups">
+            <div class="skill-group">
+              <h3 class="skill-group__title">Blue Team</h3>
+              <div class="skill" data-level="65">
+                <div class="skill__head">
+                  <span>Splunk</span><span class="skill__pct">65%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="70">
+                <div class="skill__head">
+                  <span>Elastic</span><span class="skill__pct">70%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="90">
+                <div class="skill__head">
+                  <span>Wireshark/Tcpdump</span><span class="skill__pct">90%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="80">
+                <div class="skill__head">
+                  <span>Suricata/Snort</span><span class="skill__pct">80%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Red Team</h3>
+              <div class="skill" data-level="70">
+                <div class="skill__head">
+                  <span>Burp Suite</span><span class="skill__pct">70%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="60">
+                <div class="skill__head">
+                  <span>Metasploit</span><span class="skill__pct">60%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="95">
+                <div class="skill__head"><span>Nmap</span><span class="skill__pct">95%</span></div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="70">
+                <div class="skill__head">
+                  <span>Hashcat/JohnTheRipper</span><span class="skill__pct">70%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">SOAR & Automation</h3>
+              <div class="skill" data-level="55">
+                <div class="skill__head">
+                  <span>The Shuffle</span><span class="skill__pct">55%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="60">
+                <div class="skill__head">
+                  <span>The Hive/Codex</span><span class="skill__pct">60%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+              <div class="skill" data-level="70">
+                <div class="skill__head">
+                  <span>Python</span><span class="skill__pct">70%</span>
+                </div>
+                <div class="skill__bar"><div class="skill__fill"></div></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="certifications">
+          <h2 class="section__title"><span class="tag">03</span> CERTIFICAZIONI</h2>
+          <p class="section__hint"></p>
+
+          <div class="cert-list">
+            <article class="cert-card">
+              <div class="cert-card__icon">🔵</div>
+              <div class="cert-card__body">
+                <div class="cert-card__top">
+                  <h3>TryHackMe SOC Level 1</h3>
+                  <span class="cert-card__date">2026</span>
+                </div>
+                <p>
+                  Percorso per SOC Analyst di primo livello. Monitoring and Incident &amp; Response:
+                  analisi del traffico di rete (Wireshark, Snort, Zeek), monitoraggio degli endpoint
+                  (Sysmon, Wazuh), SIEM (Splunk, Elastic), analisi di phishing, threat intelligence
+                  e basi di digital forensics. Utilizzati i framework Cyber Kill Chain e MITRE
+                  ATT&CK per riconoscere e classificare gli attacchi.
+                </p>
+                <a href="#" class="cert-card__link">VERIFICA_CREDENZIALE →</a>
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-card__icon">🔴</div>
+              <div class="cert-card__body">
+                <div class="cert-card__top">
+                  <h3>TryHackMe Junior Penetration Tester</h3>
+                  <span class="cert-card__date">In Corso</span>
+                </div>
+                <p>
+                  Ricognizione e scansione di rete (Nmap), test di applicazioni web con Burp Suite
+                  (SQL injection, XSS, IDOR, SSRF), sfruttamento con Metasploit e privilege
+                  escalation su Linux e Windows.
+                </p>
+                <a href="#" class="cert-card__link">VERIFICA_CREDENZIALE →</a>
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-card__icon">🔵</div>
+              <div class="cert-card__body">
+                <div class="cert-card__top">
+                  <h3>IBM SkillsBuild: Cybersecurity</h3>
+                  <span class="cert-card__date">2026</span>
+                </div>
+                <p>
+                  Cybersecurity Fundamentals, System and Network Security, Cloud Security,
+                  Vulnerability Management, Security Operations and Management, Incident Response
+                  and Systems Forensics, Governance, Risk, Compliance and Data Privacy.
+                </p>
+                <a href="https://www.credly.com/users/fabian-hysen-patti" class="cert-card__link"
+                  >VERIFICA_CREDENZIALE →</a
+                >
+              </div>
+            </article>
+            
+            <article class="cert-card">
+              <div class="cert-card__icon">🔵</div>
+              <div class="cert-card__body">
+                <div class="cert-card__top">
+                  <h3>Cisco: Introduction to Cybersecurity</h3>
+                  <span class="cert-card__date">2026</span>
+                </div>
+                <p>
+                  Cisco Networking Academy. Minacce e attacchi informatici, protezione di dati e
+                  privacy, concetti base della difesa di una rete.
+                </p>
+                <a
+                  href="https://www.credly.com/badges/1d6f5f75-26bc-430b-9042-e5738ad5a406/public_url"
+                  class="cert-card__link"
+                  >VERIFICA_CREDENZIALE →</a
+                >
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="section" id="projects">
+          <h2 class="section__title"><span class="tag">04</span> PROGETTI</h2>
+          <p class="section__hint"></p>
+          <div class="project-grid" id="project-grid">
+            <article class="project-card">
+              <div class="project-card__head">
+                <span class="project-card__status">GITHUB</span>
+              </div>
+              <h3>I miei progetti sono su GitHub</h3>
+              <p>Il codice dei miei progetti è pubblico sul mio profilo GitHub.</p>
+              <div class="project-card__links">
+                <a href="https://github.com/hys3n" target="_blank" rel="noopener"
+                  >PROFILO_GITHUB →</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <h2 class="section__title"><span class="tag">05</span> CONTATTI</h2>
+          <p class="section__hint"></p>
+          <div class="contact__wrap">
+            <div class="contact__terminal">
+              <div class="panel__head"><span>NUOVO_MESSAGGIO</span></div>
+              <p class="contact__line">
+                <span class="prompt">&gt;</span> per contattarmi, scrivi a:
+              </p>
+              <a class="contact__email" href="mailto:patti.fabian@gmail.com"
+                >patti.fabian@gmail.com</a
+              >
+              <p class="contact__line dim">// oppure trovami sui canali qui a destra</p>
+            </div>
+
+            <div class="contact__links">
+              <a
+                href="https://github.com/hys3n"
+                class="contact__item"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>Github</span><span>→</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/fabian-hysen-patti"
+                class="contact__item"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>LinkedIn</span><span>→</span>
+              </a>
+              <a
+                href="https://tryhackme.com/p/fabaf"
+                class="contact__item"
+                target="_blank"
+                rel="noopener"
+              >
+                <span>TryHackMe</span><span>→</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Fabian Hysen Patti</span>
+        <span class="dim">//flag{hire_me_now}</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
