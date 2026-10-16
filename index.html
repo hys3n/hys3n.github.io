@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fabian Hysen Patti - SOC Analyst & Pen Tester</title>
+    <title>Fabian Hysen Patti :: root@portfolio</title>
     <meta
       name="description"
       content="Portfolio di Fabian Hysen Patti — SOC Analyst e Pen Tester. Competenze, certificazioni e progetti."
@@ -35,7 +35,9 @@
           <span>PORTFOLIO_OS <span class="dim">v1.0</span></span>
         </div>
         <nav class="topbar__nav" id="site-nav">
+          <a href="#experience" data-target="experience">ESPERIENZE</a>
           <a href="#about" data-target="about">CHI_SONO</a>
+          <a href="#achievements" data-target="achievements">TRAGUARDI</a>
           <a href="#skills" data-target="skills">COMPETENZE</a>
           <a href="#certifications" data-target="certifications">CERTIFICAZIONI</a>
           <a href="#projects" data-target="projects">PROGETTI</a>
@@ -69,7 +71,7 @@
             <div class="hero__actions">
               <a href="#projects" class="btn btn--ghost">&gt; VEDI_PROGETTI</a>
               <a href="#contact" class="btn btn--ghost">&gt; CONTATTAMI</a>
-              <a href="assets/cv.pdf" class="btn btn--ghost" download="FabianHysenPattiCV.pdf">&gt; SCARICA_CV</a>
+              <a href="assets/cv.pdf" class="btn btn--ghost" target="_blank" rel="noopener" download>&gt; SCARICA_CV</a>
             </div>
           </div>
 
@@ -82,35 +84,66 @@
               </div>
             </div>
             <ul class="panel__list">
-              <li><span class="mono">01</span> COMPETENZE_TECNICHE</li>
-              <li><span class="mono">02</span> CERTIFICAZIONI_VERIFICATE</li>
-              <li><span class="mono">03</span> PROGETTI_ESEGUITI</li>
-              <li><span class="mono">04</span> INFORMAZIONI_DI_CONTATTO</li>
+              <li><span class="mono">01</span> ESPERIENZE_LAVORATIVE</li>
+              <li><span class="mono">02</span> DESCRIZIONE</li>
+              <li><span class="mono">03</span> TRAGUARDI_RAGGIUNTI</li>
+              <li><span class="mono">04</span> COMPETENZE_TECNICHE</li>
+              <li><span class="mono">05</span> CERTIFICAZIONI_VERIFICATE</li>
+              <li><span class="mono">06</span> PROGETTI_ESEGUITI</li>
+              <li><span class="mono">07</span> INFORMAZIONI_DI_CONTATTO</li>
             </ul>
           </div>
         </section>
 
+        <section class="section" id="experience">
+          <h2 class="section__title"><span class="tag">01</span> ESPERIENZE</h2>
+          <p class="section__hint"></p>
+
+          <div class="experience-list">
+            <article class="experience">
+              <div class="experience__top">
+                <h3>Co-Founder &amp; Engineering Lead</h3>
+                <span class="experience__date">10/2026 — Presente</span>
+              </div>
+              <p class="experience__company">NEFI OS</p>
+              <ul class="experience__tasks">
+                <li>Gestione del codice con Git: branching, merge, rebase e submodules</li>
+                <li>Gestione dei flussi di rilascio del software</li>
+                <li>Creazione di pipeline CI/CD per build, test e release con GitHub Actions e GitLab CI</li>
+                <li>Containerizzazione e automazione dei processi con Docker</li>
+                <li>Organizzazione di test automatici: unitari, di integrazione, di regressione, di performance ed end-to-end</li>
+                <li>Promozione del Clean Code e refactoring del codice esistente</li>
+                <li>Analisi statica e verifica della copertura del codice</li>
+                <li>Sviluppo e automazione quotidiana con Python e Bash</li>
+              </ul>
+              <div class="experience__stack">
+                <span>Git</span>
+                <span>GitHub Actions</span>
+                <span>GitLab CI</span>
+                <span>Docker</span>
+                <span>Python</span>
+                <span>Bash</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section class="section" id="about">
-          <h2 class="section__title"><span class="tag">01</span> CHI_SONO</h2>
+          <h2 class="section__title"><span class="tag">02</span> CHI_SONO</h2>
           <div class="about__grid">
             <div class="about__text">
               <p>
-                Sono Fabian Hysen Patti, studente di cybersecurity presso ITS ICT Piemonte, passo le
+                Sono Fabian Hysen Patti, studente di cybersecurity presso ITS ICT Piemonte. Passo le
                 mie giornate a studiare vulnerabilità e tecniche di exploit per poi vedere come si
                 possano prevenire o contrastare nel migliore dei modi. Obiettivo:
-                <span class="hl">Purple Team</span>. Sapere come funzioni un software di pen-testing
+                <span class="hl">Purple Team</span>. Sapere come funziona un software di pen-testing
                 ti permette di trovare la soluzione migliore per contrastarlo.
               </p>
               <p>
-                Ora parlano i fatti:
-                <br />
-                -<span class="hl">Top 1% mondiale su TryHackMe</span>, la strada è ancora lunga ma
-                determinazione e passione non mancano.
-                <br />
-                -<span class="hl">NEFI OS</span>, Distro linux incentrata sulla difesa.
-                <br />
-                -<span class="hl">CTF Player</span>, Il modo migliore per dimostrare di cosa siamo
-                capaci, il campo di prova per le nostre competenze.
+                Per consolidare le mie conoscenze utilizzo piattaforme come
+                <span class="hl">TryHackMe, HackTheBox e PortSwigger</span>, dove metto mano a
+                laboratori con scenari professionali o a tema CTF e ho la possibilità di mettere in
+                pratica le mie conoscenze.
               </p>
             </div>
             <div class="about__side">
@@ -130,7 +163,7 @@
 
               <div class="about__stats">
                 <div class="stat">
-                  <span class="stat__value">0</span>
+                  <span class="stat__value">2</span>
                   <span class="stat__label">ANNI_ESPERIENZA</span>
                 </div>
                 <div class="stat">
@@ -146,8 +179,42 @@
           </div>
         </section>
 
+        <section class="section" id="achievements">
+          <h2 class="section__title"><span class="tag">03</span> TRAGUARDI</h2>
+          <p class="section__hint"></p>
+
+          <div class="achievement-grid">
+            <article class="achievement">
+              <div class="achievement__head">
+                <span class="achievement__status">RAGGIUNTO</span><span>CTF</span>
+              </div>
+              <span class="achievement__value">🥇Primo posto</span>
+              <h3>CTF Nazionale a Cernobbio</h3>
+              <p>Primo classificato con la squadra Mole Breakers</p>
+            </article>
+
+            <article class="achievement">
+              <div class="achievement__head">
+                <span class="achievement__status">RAGGIUNTO</span><span>TryHackMe</span>
+              </div>
+              <span class="achievement__value">Top 1% mondiale</span>
+              <h3>TryHackMe</h3>
+              <p>Tra l'1% dei migliori utenti della piattaforma TryHackMe</p>
+            </article>
+
+            <article class="achievement">
+              <div class="achievement__head">
+                <span class="achievement__status">IN SVILUPPO</span><span>NEFI OS</span>
+              </div>
+              <span class="achievement__value">NEFI OS</span>
+              <h3>Sistema operativo</h3>
+              <p>Sistema operativo incentrato sulla difesa grazie all'interfaccia di NEFI Center</p>
+            </article>
+          </div>
+        </section>
+
         <section class="section" id="skills">
-          <h2 class="section__title"><span class="tag">02</span> COMPETENZE</h2>
+          <h2 class="section__title"><span class="tag">04</span> COMPETENZE</h2>
           <p class="section__hint"></p>
 
           <div class="skills__groups">
@@ -199,23 +266,23 @@
               </div>
               <div class="skill" data-level="70">
                 <div class="skill__head">
-                  <span>Hashcat/JohnTheRipper</span><span class="skill__pct">70%</span>
+                  <span>Hashcat/John the Ripper</span><span class="skill__pct">70%</span>
                 </div>
                 <div class="skill__bar"><div class="skill__fill"></div></div>
               </div>
             </div>
 
             <div class="skill-group">
-              <h3 class="skill-group__title">SOAR & Automation</h3>
+              <h3 class="skill-group__title">SOAR &amp; Automation</h3>
               <div class="skill" data-level="55">
                 <div class="skill__head">
-                  <span>The Shuffle</span><span class="skill__pct">55%</span>
+                  <span>Shuffle</span><span class="skill__pct">55%</span>
                 </div>
                 <div class="skill__bar"><div class="skill__fill"></div></div>
               </div>
               <div class="skill" data-level="60">
                 <div class="skill__head">
-                  <span>The Hive/Codex</span><span class="skill__pct">60%</span>
+                  <span>TheHive/Cortex</span><span class="skill__pct">60%</span>
                 </div>
                 <div class="skill__bar"><div class="skill__fill"></div></div>
               </div>
@@ -230,10 +297,27 @@
         </section>
 
         <section class="section" id="certifications">
-          <h2 class="section__title"><span class="tag">03</span> CERTIFICAZIONI</h2>
+          <h2 class="section__title"><span class="tag">05</span> CERTIFICAZIONI</h2>
           <p class="section__hint"></p>
 
           <div class="cert-list">
+            <article class="cert-card">
+              <div class="cert-card__icon">🔵</div>
+              <div class="cert-card__body">
+                <div class="cert-card__top">
+                  <h3>Corso per SOC Analyst – ITS ICT Piemonte</h3>
+                  <span class="cert-card__date">In corso</span>
+                </div>
+                <p>
+                  Corso post-diploma per SOC Analyst. Monitoraggio e analisi degli eventi di sicurezza
+                  con SIEM, rilevamento e gestione degli incidenti, analisi del traffico di rete,
+                  threat intelligence e basi di digital forensics. Utilizzo del framework MITRE
+                  ATT&amp;CK per riconoscere e classificare gli attacchi.
+                </p>
+                <a href="#" class="cert-card__link">VERIFICA_CREDENZIALE →</a>
+              </div>
+            </article>
+
             <article class="cert-card">
               <div class="cert-card__icon">🔵</div>
               <div class="cert-card__body">
@@ -245,10 +329,16 @@
                   Percorso per SOC Analyst di primo livello. Monitoring and Incident &amp; Response:
                   analisi del traffico di rete (Wireshark, Snort, Zeek), monitoraggio degli endpoint
                   (Sysmon, Wazuh), SIEM (Splunk, Elastic), analisi di phishing, threat intelligence
-                  e basi di digital forensics. Utilizzati i framework Cyber Kill Chain e MITRE
-                  ATT&CK per riconoscere e classificare gli attacchi.
+                  e basi di digital forensics. Utilizzo dei framework Cyber Kill Chain e MITRE
+                  ATT&amp;CK per riconoscere e classificare gli attacchi.
                 </p>
-                <a href="#" class="cert-card__link">VERIFICA_CREDENZIALE →</a>
+                <a
+                  href="https://tryhackme.com/p/fabaf"
+                  class="cert-card__link"
+                  target="_blank"
+                  rel="noopener"
+                  >VERIFICA_CREDENZIALE →</a
+                >
               </div>
             </article>
 
@@ -257,14 +347,41 @@
               <div class="cert-card__body">
                 <div class="cert-card__top">
                   <h3>TryHackMe Junior Penetration Tester</h3>
-                  <span class="cert-card__date">In Corso</span>
+                  <span class="cert-card__date">In corso</span>
                 </div>
                 <p>
                   Ricognizione e scansione di rete (Nmap), test di applicazioni web con Burp Suite
                   (SQL injection, XSS, IDOR, SSRF), sfruttamento con Metasploit e privilege
                   escalation su Linux e Windows.
                 </p>
-                <a href="#" class="cert-card__link">VERIFICA_CREDENZIALE →</a>
+                <a
+                  href="https://tryhackme.com/p/fabaf"
+                  class="cert-card__link"
+                  target="_blank"
+                  rel="noopener"
+                  >VERIFICA_CREDENZIALE →</a
+                >
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-card__icon">🔵</div>
+              <div class="cert-card__body">
+                <div class="cert-card__top">
+                  <h3>Cisco: Introduction to Cybersecurity</h3>
+                  <span class="cert-card__date">2026</span>
+                </div>
+                <p>
+                  Cisco Networking Academy. Minacce e attacchi informatici, protezione di dati e
+                  privacy, concetti base della difesa di una rete.
+                </p>
+                <a
+                  href="https://www.credly.com/badges/1d6f5f75-26bc-430b-9042-e5738ad5a406/public_url"
+                  class="cert-card__link"
+                  target="_blank"
+                  rel="noopener"
+                  >VERIFICA_CREDENZIALE →</a
+                >
               </div>
             </article>
 
@@ -280,55 +397,43 @@
                   Vulnerability Management, Security Operations and Management, Incident Response
                   and Systems Forensics, Governance, Risk, Compliance and Data Privacy.
                 </p>
-                <a href="https://www.credly.com/users/fabian-hysen-patti" class="cert-card__link"
-                  >VERIFICA_CREDENZIALE →</a
-                >
-              </div>
-            </article>
-            
-            <article class="cert-card">
-              <div class="cert-card__icon">🔵</div>
-              <div class="cert-card__body">
-                <div class="cert-card__top">
-                  <h3>Cisco: Introduction to Cybersecurity</h3>
-                  <span class="cert-card__date">2026</span>
-                </div>
-                <p>
-                  Cisco Networking Academy. Minacce e attacchi informatici, protezione di dati e
-                  privacy, concetti base della difesa di una rete.
-                </p>
                 <a
-                  href="https://www.credly.com/badges/1d6f5f75-26bc-430b-9042-e5738ad5a406/public_url"
+                  href="https://www.credly.com/users/fabian-hysen-patti"
                   class="cert-card__link"
+                  target="_blank"
+                  rel="noopener"
                   >VERIFICA_CREDENZIALE →</a
                 >
               </div>
             </article>
-
           </div>
         </section>
 
         <section class="section" id="projects">
-          <h2 class="section__title"><span class="tag">04</span> PROGETTI</h2>
+          <h2 class="section__title"><span class="tag">06</span> PROGETTI</h2>
           <p class="section__hint"></p>
           <div class="project-grid" id="project-grid">
             <article class="project-card">
               <div class="project-card__head">
                 <span class="project-card__status">GITHUB</span>
+                <span class="project-card__year">IN CORSO</span>
               </div>
-              <h3>I miei progetti sono su GitHub</h3>
-              <p>Il codice dei miei progetti è pubblico sul mio profilo GitHub.</p>
+              <h3>NEFI OS</h3>
+              <p>Sistema operativo incentrato sulla difesa</p>
+              <div class="project-card__stack">
+                <span>Debian</span>
+                <span>KDE Plasma</span>
+                <span>NEFI Center</span>
+              </div>
               <div class="project-card__links">
-                <a href="https://github.com/hys3n" target="_blank" rel="noopener"
-                  >PROFILO_GITHUB →</a
-                >
+                <a href="https://github.com/nefios/NEFI-OS" target="_blank" rel="noopener">CODICE →</a>
               </div>
             </article>
           </div>
         </section>
 
         <section class="section" id="contact">
-          <h2 class="section__title"><span class="tag">05</span> CONTATTI</h2>
+          <h2 class="section__title"><span class="tag">07</span> CONTATTI</h2>
           <p class="section__hint"></p>
           <div class="contact__wrap">
             <div class="contact__terminal">
@@ -336,9 +441,7 @@
               <p class="contact__line">
                 <span class="prompt">&gt;</span> per contattarmi, scrivi a:
               </p>
-              <a class="contact__email" href="mailto:patti.fabian@gmail.com"
-                >patti.fabian@gmail.com</a
-              >
+              <a class="contact__email" href="mailto:patti.fabian@gmail.com">patti.fabian@gmail.com</a>
               <p class="contact__line dim">// oppure trovami sui canali qui a destra</p>
             </div>
 
@@ -349,7 +452,7 @@
                 target="_blank"
                 rel="noopener"
               >
-                <span>Github</span><span>→</span>
+                <span>GitHub</span><span>→</span>
               </a>
               <a
                 href="https://www.linkedin.com/in/fabian-hysen-patti"

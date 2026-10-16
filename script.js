@@ -161,7 +161,7 @@ async function loadGithubProjects() {
 
     if (top3.length === 0) throw new Error("Nessun repository pubblico trovato");
 
-    grid.innerHTML = top3.map(repoToCardHtml).join("");
+    grid.insertAdjacentHTML("beforeend", top3.map(repoToCardHtml).join(""));
   } catch (err) {
     console.warn("Impossibile caricare i progetti da GitHub, resta il messaggio di riserva:", err);
   }
